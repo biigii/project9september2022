@@ -1,0 +1,83 @@
+.block {
+  height: 500px;
+  border: 3px dashed;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: #f77;
+  /* transform: scale();
+  transform: rotate();
+  transform: translate();
+  transform: skew(); */
+  /* scale: 2; */
+  /* rotate: 360deg; */
+  /* translate: 100px 200px; */
+  /* transform: translateX(200px);
+  transform: translateY(200px);
+  transform: scale(0.5); */
+  /* transform: translateX(100px) translateY(200px) scale(2) rotate(45deg); */
+  /* rotate: 45deg;
+  scale: 2 */
+ /* transform: skew(45deg); */
+ animation-name: pulse;
+ animation-duration: 400ms;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-in-out;
+}
+
+@keyframes pulse {
+   0% {
+    scale: 1
+   }
+   100% {
+      scale: 1.1
+   }
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  font-size: 2em;
+  text-transform: capitalize;
+  background-color: #fff;
+  transition: scale 500ms;
+  /* transition-property: scale;
+  transition-duration: 500ms; */
+  /* transition-timing-function: ease; */
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+.btn:hover {
+  /* scale: 1.01; */
+  /* translate: 1px 1px; */
+  /* animation-name: spin; */
+  animation-name: shake;
+}
+
+/* @keyframes spin {
+   from {
+      rotate: 0deg;
+   }
+   to {
+      rotate: 360deg;
+   }
+} */
+
+@keyframes shake {
+   0% {
+      transform: skewX(0deg);
+      background-color: #fff;
+      border-radius: 0;
+   }
+   100% {
+      transform: skewX(20deg);
+      background-color: #f33;
+      border-radius: 20px;
+   }
+}
