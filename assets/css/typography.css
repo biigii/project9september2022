@@ -22,3 +22,9 @@ p.text {
   word-spacing: 20px;
   /* font: italic small-caps 700  12px/20px 'Roboto', sans-serif;  */
 }
+
+.letter-a {
+  /* margin-right: 15px; */
+  color: #f22;
+  font-size: 3em;
+}
